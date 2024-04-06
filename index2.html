@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Karla:ital,wght@0,200..800;1,200..800&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Application Form</h1>
+    <form id="application-form" action="./insert.php" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="year-of-passing">Year of Passing:</label>
+        <input type="number" id="year-of-passing" name="year-of-passing" required>
+      </div>
+      <div class="form-group">
+        <label for="board-percentage">Board Percentage:</label>
+        <input type="number" id="board-percentage" name="board-percentage" required>
+      </div>
+      <div class="form-group">
+        <label for="board-of-education">Board of Education:</label>
+        <select id="board-of-education" name="board-of-education" required>
+          <option value="">Select Board</option>
+          <option value="haryana">hbsc</option>
+          <option value="up">up</option>
+          <option value="cbse">cbse</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="pdf-upload">Upload PDF:</label>
+        <input type="file" id="pdf-upload" name="pdf-upload" accept=".pdf">
+      </div>
+      <div class="form-group disclaimer">
+        <p>By submitting this form, I hereby declare that the information provided is true and accurate. I understand that providing false information will lead to disqualification of my application.</p>
+      </div>
+      <button type="submit" name="contact-save">Submit</button>
+    </form>
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
